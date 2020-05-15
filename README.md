@@ -1,7 +1,6 @@
-# Chifoumi
 ## Chifoumi Games
 
-# Chifoumi
+# Chifoumi iOS
 
 Chifoumi Games on ios.
 
