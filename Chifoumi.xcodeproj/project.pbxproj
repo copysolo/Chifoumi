@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F8954425246DAF7800FD75BE /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8954422246DAF7800FD75BE /* wrong.wav */; };
+		F8954426246DAF7800FD75BE /* tictac.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F8954423246DAF7800FD75BE /* tictac.mp3 */; };
+		F8954427246DAF7800FD75BE /* good.wav in Resources */ = {isa = PBXBuildFile; fileRef = F8954424246DAF7800FD75BE /* good.wav */; };
 		F8B203972468B64B006BF78C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B203962468B64B006BF78C /* AppDelegate.swift */; };
 		F8B203992468B64B006BF78C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B203982468B64B006BF78C /* SceneDelegate.swift */; };
 		F8B2039B2468B64B006BF78C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8B2039A2468B64B006BF78C /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F8954422246DAF7800FD75BE /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		F8954423246DAF7800FD75BE /* tictac.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = tictac.mp3; sourceTree = "<group>"; };
+		F8954424246DAF7800FD75BE /* good.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = good.wav; sourceTree = "<group>"; };
 		F8B203932468B64B006BF78C /* Chifoumi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Chifoumi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8B203962468B64B006BF78C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F8B203982468B64B006BF78C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +43,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F8954421246DAEF500FD75BE /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				F8954424246DAF7800FD75BE /* good.wav */,
+				F8954423246DAF7800FD75BE /* tictac.mp3 */,
+				F8954422246DAF7800FD75BE /* wrong.wav */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
 		F8B2038A2468B64B006BF78C = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +72,7 @@
 		F8B203952468B64B006BF78C /* Chifoumi */ = {
 			isa = PBXGroup;
 			children = (
+				F8954421246DAEF500FD75BE /* Ressources */,
 				F8B203962468B64B006BF78C /* AppDelegate.swift */,
 				F8B203982468B64B006BF78C /* SceneDelegate.swift */,
 				F8B2039A2468B64B006BF78C /* ViewController.swift */,
@@ -127,7 +144,10 @@
 			files = (
 				F8B203A32468B652006BF78C /* LaunchScreen.storyboard in Resources */,
 				F8B203A02468B652006BF78C /* Assets.xcassets in Resources */,
+				F8954425246DAF7800FD75BE /* wrong.wav in Resources */,
+				F8954427246DAF7800FD75BE /* good.wav in Resources */,
 				F8B2039E2468B64B006BF78C /* Main.storyboard in Resources */,
+				F8954426246DAF7800FD75BE /* tictac.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,135 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Chifoumi" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKn-kv-5th">
+                                <rect key="frame" x="16" y="44" width="382" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="jLV-kh-teu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MuktaMahee-Bold" family="Mukta Mahee" pointSize="20"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ciseaux" translatesAutoresizingMaskIntoConstraints="NO" id="EP1-Ik-RDZ">
+                                <rect key="frame" x="16" y="94" width="382" height="687"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="XAb-We-yts">
+                                <rect key="frame" x="16" y="801" width="358" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0w-Hx-E49">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="C0w-Hx-E49" secondAttribute="height" id="56O-0S-J1o"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="pierre"/>
+                                        <connections>
+                                            <action selector="pierreBonAppuye:" destination="BYZ-38-t0r" eventType="touchUpInside" id="khy-7e-tbJ"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8C-pf-gUU">
+                                        <rect key="frame" x="141.66666666666666" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="f8C-pf-gUU" secondAttribute="height" id="pFb-7u-iAt"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="feuille"/>
+                                        <connections>
+                                            <action selector="feuilleBoutonAppuye:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pyz-kI-szP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wTp-xz-raQ">
+                                        <rect key="frame" x="283" y="0.0" width="75" height="75"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="wTp-xz-raQ" secondAttribute="height" id="fxN-Lq-OyG"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="ciseaux"/>
+                                        <connections>
+                                            <action selector="ciseauxBoutonAppuye:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5Bh-eW-gJM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="wTp-xz-raQ" firstAttribute="width" secondItem="wTp-xz-raQ" secondAttribute="height" id="5CN-Vd-I4H"/>
+                                    <constraint firstAttribute="height" constant="75" id="6Vd-WC-Zbs"/>
+                                    <constraint firstAttribute="width" constant="75" id="qoC-AH-wHP"/>
+                                    <constraint firstItem="f8C-pf-gUU" firstAttribute="width" secondItem="f8C-pf-gUU" secondAttribute="height" id="seC-pa-rc7"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="qoC-AH-wHP"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact" axis="vertical">
+                                    <mask key="constraints">
+                                        <exclude reference="6Vd-WC-Zbs"/>
+                                        <include reference="qoC-AH-wHP"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EP1-Ik-RDZ" secondAttribute="trailing" constant="16" id="7j3-oI-xPF"/>
+                            <constraint firstItem="XAb-We-yts" firstAttribute="leading" secondItem="EP1-Ik-RDZ" secondAttribute="trailing" constant="20" id="GGT-j2-UcT"/>
+                            <constraint firstItem="EP1-Ik-RDZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="GTV-Z7-gdr"/>
+                            <constraint firstItem="XAb-We-yts" firstAttribute="top" secondItem="IKn-kv-5th" secondAttribute="bottom" constant="20" id="HjX-Qs-yes"/>
+                            <constraint firstItem="IKn-kv-5th" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="O3n-CB-ZeR"/>
+                            <constraint firstItem="IKn-kv-5th" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PeH-MC-TLg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IKn-kv-5th" secondAttribute="trailing" constant="16" id="QnV-BY-ZKP"/>
+                            <constraint firstAttribute="trailing" secondItem="XAb-We-yts" secondAttribute="trailing" constant="40" id="c4M-88-hKl"/>
+                            <constraint firstItem="EP1-Ik-RDZ" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="20" id="cLE-Y6-g0n">
+                                <variation key="heightClass=compact" constant="1"/>
+                            </constraint>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IKn-kv-5th" secondAttribute="trailing" constant="16" id="e2R-Fu-aNm"/>
+                            <constraint firstItem="XAb-We-yts" firstAttribute="top" secondItem="EP1-Ik-RDZ" secondAttribute="bottom" constant="20" id="icg-44-ZDd"/>
+                            <constraint firstAttribute="bottom" secondItem="XAb-We-yts" secondAttribute="bottom" constant="20" id="jJ9-Ik-bfh"/>
+                            <constraint firstAttribute="bottom" secondItem="EP1-Ik-RDZ" secondAttribute="bottom" constant="20" id="mYg-Oh-rq4"/>
+                            <constraint firstItem="IKn-kv-5th" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="nrr-v3-IUa"/>
+                            <constraint firstItem="EP1-Ik-RDZ" firstAttribute="top" secondItem="IKn-kv-5th" secondAttribute="bottom" constant="20" id="r6s-Uh-xx4"/>
+                            <constraint firstItem="IKn-kv-5th" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="x0H-yg-0wY"/>
+                            <constraint firstItem="XAb-We-yts" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ywN-RU-cex"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cLE-Y6-g0n"/>
+                                <exclude reference="mYg-Oh-rq4"/>
+                                <exclude reference="GGT-j2-UcT"/>
+                                <exclude reference="HjX-Qs-yes"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="7j3-oI-xPF"/>
+                                <include reference="cLE-Y6-g0n"/>
+                                <exclude reference="mYg-Oh-rq4"/>
+                                <include reference="GGT-j2-UcT"/>
+                                <include reference="HjX-Qs-yes"/>
+                                <exclude reference="icg-44-ZDd"/>
+                                <exclude reference="ywN-RU-cex"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="ciseauxBouton" destination="wTp-xz-raQ" id="tbD-Vk-HVS"/>
+                        <outlet property="feuilleBouton" destination="f8C-pf-gUU" id="zoU-Si-e47"/>
+                        <outlet property="pierreBouton" destination="C0w-Hx-E49" id="vyA-ou-9eL"/>
+                        <outlet property="resultatImageView" destination="EP1-Ik-RDZ" id="XKp-AW-R3z"/>
+                        <outlet property="resultatLabel" destination="IKn-kv-5th" id="RwI-9W-Iwv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-287.27678571428572" y="5.7971014492753632"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ciseaux" width="550" height="550"/>
+        <image name="feuille" width="525" height="525"/>
+        <image name="pierre" width="525" height="525"/>
+    </resources>
 </document>
